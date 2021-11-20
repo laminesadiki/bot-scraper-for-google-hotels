@@ -1,0 +1,25 @@
+{
+  "title": "Google Hotels Scraper",
+  "description": "Scrap google hotels platform",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "cityName": {
+      "title": "Nom de ville ou Quartier",
+      "type": "string",
+      "description": "City name as you would enter to Google Hotels search.",
+      "editor": "textfield"
+    },
+    "proxyConfig": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "Use Apify Proxy, you need to have some proxy group to get results on Google.",
+      "prefill": {
+        "useApifyProxy": true
+      },
+      "editor": "proxy"
+    }
+
+  },
+  "required": ["cityName"]
+}
